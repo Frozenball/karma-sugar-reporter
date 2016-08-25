@@ -1,0 +1,15 @@
+{
+  "name": "karma-sugar-reporter",
+  "version": "0.0.1",
+  "description": "Better error messages for Karma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teemu <teemu@fastmonkeys.com>",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "lodash": "^4.15.0"
+  }
+}
