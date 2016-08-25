@@ -26,7 +26,7 @@ var SugarReporter = function(baseReporterDecorator, config, logger, helper, form
           var j = 0;
           for (var suiteLine of suite) {
             if (suiteLine !== true && line.includes(suiteLine)) {
-              this.write(colors.yellow(i) + ": " +line);
+              this.write(colors.yellow(i+1) + ": " +line);
               suite[j] = true;
               break;
             }
@@ -41,9 +41,9 @@ var SugarReporter = function(baseReporterDecorator, config, logger, helper, form
           if (startPrinting !== false) {
             startPrinting += 1;
             if (startPrinting === 1) {
-              this.write(colors.yellow(i) + ": " + colors.yellow(line));
+              this.write(colors.yellow(i+1) + ": " + colors.yellow(line));
             } else {
-              this.write(colors.yellow(i) + ": " +line);
+              this.write(colors.yellow(i+1) + ": " +line);
             }
             if (startPrinting >= 5) {
               this.write('');
